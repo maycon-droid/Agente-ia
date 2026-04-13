@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e2e4ee;
+  font-family: system-ui, sans-serif;
+}
+
+#container {
+  background: #fff;
+  border: 1px solid #e2e2de;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 520px;
+  display: flex;
+  align-items: center;
+}
+
+#campo-pergunta {
+  font-size: 20px;
+  font-weight: 500;
+  color: #1a1a18;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  min-height: 52px;
+}
+
+#campo-resposta {
+  height: 30px;
+  padding: 0 12px;
+  font-size: 15px;
+  border: 1px solid #575757;
+  border-radius: 8px;
+  background: #f9f9f7;
+  color: #1a1a18;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  width: 100%;
+  margin: 10px;
+}
+
+#campo-resposta:focus {
+  border-color: #888;
+  box-shadow: 0 0 0 3px rgba(55, 138, 221, 0.15);
+}
+
+#campo-resposta::placeholder {
+  color: #aaa;
+}
+
+/* Agrupe input + botão lado a lado */
+#container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Envolva o input e o botão num div.row no HTML */
+.row {
+  display: flex;
+  gap: 8px;
+}
+
+#enviar-resposta {
+  height: 40px;
+  padding: 0 18px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: transparent;
+  color: #1a1a18;
+  cursor: pointer;
+  transition: background 0.12s, transform 0.1s;
+  width: 100%;
+}
+
+#enviar-resposta:hover {
+  background: #ececeb;
+}
+
+#enviar-resposta:active {
+  transform: scale(0.97);
+}
